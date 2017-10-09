@@ -1,0 +1,18 @@
+{
+  "RootNamespace":"",
+  "Packages": [
+    "Fuse",
+    "FuseJS",
+    "Android.ActivityUtils"
+  ],
+    "Mobile": {
+    "ShowStatusbar": true,
+    "RunsInBackground": true,
+    "Orientations": "Portrait",
+    "UriScheme": "Parkopoly"
+  },
+  "Includes": [
+    "*"
+  ]
+}
+
