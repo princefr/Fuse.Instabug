@@ -57,7 +57,6 @@ public class FuseInstabug : Behavior {
     extern(iOS) void InitImpl(string token) 
     @{
         [Instabug startWithToken:token invocationEvent:IBGInvocationEventShake];
-        [Instabug startWithToken:@"65fe9a0a0174c0601dcfedb9da20dd82" invocationEvent:IBGInvocationEventShake];
         [Instabug identifyUserWithEmail:@"pondonda@gmail.com" name:@"Prince"];
         [Instabug setLocale:IBGLocaleFrench];
 
