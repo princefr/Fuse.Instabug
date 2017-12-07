@@ -81,7 +81,7 @@ public class FuseInstabug : Behavior {
     @{
         
         [Instabug startWithToken:token invocationEvent:IBGInvocationEventShake];
-        [Instabug identifyUserWithEmail:@"pondonda@gmail.com" name:@"Prince"];
+        [Instabug identifyUserWithEmail:@"youremail@gmail.com" name:@"yourusername"];
         [Instabug setLocale:IBGLocaleFrench];
 
     @}
@@ -97,8 +97,8 @@ public class FuseInstabug : Behavior {
         .build();
 
 
-        mInstabug.setUserEmail("pondonda@gmail.com");
-        mInstabug.setUsername("prince");
+        mInstabug.setUserEmail("youremail@gmail.com");
+        mInstabug.setUsername("yourusername");
         mInstabug.setShakingThreshold(110);
         mInstabug.setDebugEnabled(true);
     @}
