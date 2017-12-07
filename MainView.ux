@@ -1,5 +1,5 @@
 <App>
 	<FuseInstabug Token="IOSToken" TokenAndroid="Androidtoken"/>
 
-	<DockPanel Clicked="{sendToast}" Color="Black"></DockPanel>
+	
 </App>
