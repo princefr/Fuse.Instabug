@@ -1,5 +1,9 @@
 <App>
 	<FuseInstabug Token="IOSToken" TokenAndroid="Androidtoken"/>
-
+<Panel>
+    <NativeViewHost>
+        <WebView Url="http://example.com" />
+    </NativeViewHost>
+</Panel>
 	
 </App>
