@@ -28,7 +28,9 @@ using Fuse.Platform;
 [extern(android) ForeignInclude(Language.Java, "android.net.Uri")]
 [extern(android) ForeignInclude(Language.Java, "android.os.Handler")]
 [extern(android) ForeignInclude(Language.Java, "android.os.Looper")]
-[extern(android) ForeignInclude(Language.Java, "android.support.annotation.Nullable")]
+
+[extern(android) ForeignInclude(Language.Java, "android.support.annotation.Nullable", "com.fusetools.insta.fuseinstabug")]
+
 
 
 public class FuseInstabug : Behavior {
@@ -91,16 +93,12 @@ public class FuseInstabug : Behavior {
     public void InitImplAndroid(string token) 
     @{
 
-        Instabug mInstabug = new Instabug.Builder(Activity.getRootActivity().getApplication(), token)
-        .setIntroMessageEnabled(true)
-        .setInvocationEvent(InstabugInvocationEvent.SHAKE)
-        .build();
 
 
-        mInstabug.setUserEmail("youremail@gmail.com");
-        mInstabug.setUsername("yourusername");
-        mInstabug.setShakingThreshold(110);
-        mInstabug.setDebugEnabled(true);
+        
+        fuseinstabug insta = new fuseinstabug();
+        insta.invoke(token);
+
     @}
 
 
