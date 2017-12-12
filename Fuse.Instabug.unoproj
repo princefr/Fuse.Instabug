@@ -1,18 +1,25 @@
 {
   "RootNamespace":"",
+  "VersionCode": 125,
   "Packages": [
     "Fuse",
     "FuseJS",
     "Android.ActivityUtils"
   ],
+    "Android": {
+    "ApplicationLabel": "Instabug",
+    "Description": "qsdsq",
+   "VersionCode": 412,
+    "VersionName": "0.3.3",
+    "Package": "fr.fuse.instabug"
+    },
     "Mobile": {
     "ShowStatusbar": true,
     "RunsInBackground": true,
-    "Orientations": "Portrait",
-    "UriScheme": "Parkopoly"
+    "Orientations": "Portrait"
   },
   "Includes": [
-    "*"
+    "*",
+    "fuseinstabug.java:Java:Android"
   ]
 }
-
